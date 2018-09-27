@@ -10,7 +10,7 @@ class ArgumentException extends BaseException {
     * @param  {string} message - A message that describes the error.
     */
    public constructor(argumentName: string, message: string) {
-      super('ArgumentException', message, null);
+      super('ArgumentException', message, undefined);
 
       this.ArgumentName = argumentName;
    }
@@ -19,12 +19,12 @@ class ArgumentException extends BaseException {
     * The name of the parameter that caused the exception.
     */
    public ArgumentName: string;
-   
+
    public getErrorDetails(): any {
-      var result = super.getErrorDetails();
-      result['argumentName'] = this.ArgumentName;
-      
-      return result;
+      return {
+         ...super.getErrorDetails(),
+         argumentName: this.ArgumentName
+      };
    }
 }
 

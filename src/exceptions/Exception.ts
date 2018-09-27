@@ -7,10 +7,10 @@ class Exception extends BaseException {
    /**
     * Creates a new instance.
     * @param  {string} message - A message that describes the error.
-    * @param  {any=null} innerException - The exception that caused the current exception.
+    * @param  {any} innerException - The exception that caused the current exception.
     */
-   constructor(message: string = null, innerException: Exception | Error = null) {
-      super(null, message, innerException);
+   constructor(message?: string, innerException?: any) {
+      super('Exception', message, innerException);
    }
 }
 

@@ -1,4 +1,4 @@
-import Verifier from './Verifier';
+import Verifier from './impl/Verifier';
 
 /**
  * Static utility used to provide a fluent interface for arguments validation.
@@ -10,7 +10,7 @@ class Verify {
      * @param  {string} argumentName - The name of the argument being validated.
      * @returns Verifier - The Verifier instance.
      */
-    static that(argument: any, argumentName: string): Verifier {
+    public static that(argument: any, argumentName: string): Verifier {
         return new Verifier(argument, argumentName);
     }
 }

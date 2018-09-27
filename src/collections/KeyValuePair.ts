@@ -11,16 +11,16 @@ class KeyValuePair<TKey, TValue> {
         this.Key = key;
         this.Value = value;
     }
-    
+
     /**
      * The key in the key/value pair.
      */
-    Key: TKey;
-    
+    public Key: TKey;
+
     /**
      * The value in the key/value pair.
      */
-    Value: TValue;
+    public Value: TValue;
 }
 
 export default KeyValuePair;

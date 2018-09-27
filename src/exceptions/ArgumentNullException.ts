@@ -1,7 +1,7 @@
 import ArgumentException from './ArgumentException';
 
 /**
- * The exception that is thrown when a null reference is passed to a method that does not accept it as a valid argument.
+ * The exception that is thrown when a null or undefined reference is passed to a method that does not accept it as a valid argument.
  */
 class ArgumentNullException extends ArgumentException {
    /**
@@ -9,8 +9,8 @@ class ArgumentNullException extends ArgumentException {
     * @param  {string} argumentName - The name of the parameter that caused the exception.
     */
    constructor(argumentName: string) {
-      super(argumentName, `${argumentName} cannot be null.`);
-      
+      super(argumentName, `${argumentName} cannot be null or undefined.`);
+
       this.name = 'ArgumentNullException';
    }
 }

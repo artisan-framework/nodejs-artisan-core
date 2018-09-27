@@ -3,7 +3,7 @@
  */
 interface IDisposable {
     /**
-     * Performs application-defined tasks associated with freeing, releasing, 
+     * Performs application-defined tasks associated with freeing, releasing,
      * or resetting unmanaged resources.
      */
     dispose(): void;

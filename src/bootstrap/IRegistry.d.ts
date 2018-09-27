@@ -6,7 +6,7 @@ import IInjector from './IInjector';
  */
 interface IRegistry {
     /**
-     * Registers dependencies to the specified injector. 
+     * Registers dependencies to the specified injector.
      * @param  {IInjector} injector - The injector being configured.
      */
     register(injector: IInjector): void;
