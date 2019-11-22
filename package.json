@@ -1,6 +1,6 @@
 {
    "name": "artisan-core",
-   "version": "2.1.0",
+   "version": "2.1.1",
    "scripts": {
       "build": "gulp",
       "clean": "gulp clean",
@@ -13,7 +13,7 @@
    "types": "index.d.ts",
    "dependencies": {},
    "devDependencies": {
-      "@types/node": "^12.12.9",
+      "@types/node": "^12.12.11",
       "dts-generator": "^3.0.0",
       "gulp": "^4.0.2",
       "gulp-clean": "^0.4.0",
